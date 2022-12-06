@@ -1,0 +1,223 @@
+*{margin:0;padding:0;box-sizing: border-box;text-decoration: none;list-style: none;}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h6{
+    font-size: 18px;
+}
+
+nav{
+    background-color: #000;
+    color : #fff;
+}
+nav .content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 10px;
+}
+nav .logo {
+
+}
+nav .logo img{
+    width: 100px;
+}   
+
+
+nav .links ul{
+    display: flex;
+}
+nav .links ul li {
+    margin-right: 1.25rem;
+    padding: .7rem 1.1rem;
+}
+nav .links ul li a{font-size: 1.2rem; color : #fff;}
+
+
+.intro {
+    background-image: url("../img/bg-cover.jpg") ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 ;
+}
+
+.intro-title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color : #fff;
+}
+.intro-desc {
+    font-size: 2.5rem;
+    color : #000;
+    font-weight: bold;
+}
+
+.intro-desc:last-child{
+    margin-top: 2.2rem;
+}
+
+.intro-box {
+    display: flex;
+}
+.intro-box-el{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eee1d8bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 4rem 4rem 4rem 0 ;
+}
+.intro-box-el img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 2rem;
+}
+.intro-box-el h3{
+    text-align: center;
+    font-weight: normal;
+    width: 90%;
+}
+
+.how{}
+.how-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem 0 ;
+}
+
+.how-title{
+    font-size: 4rem;
+    font-weight: bolder;
+    max-width: 500px;
+    margin-top: 3rem;
+}
+.how-desc{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 400px;
+    color : #a18989;
+    margin-bottom: 2rem;
+}
+.how-group {
+    display: flex;
+}
+.how-group-left, .how-group-right{
+    width: 50%;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-group h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem  !important;
+    font-weight: bold;
+}
+.how-desc p{
+    font-size: 1.3rem;
+}
+.how-group img {
+    margin-bottom: 1.5rem;
+}
+
+.how-group-left  img {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.how-group-left h3{
+    margin-bottom: 2rem;
+}
+.how-group-left p {
+    letter-spacing: 1px;
+}
+.how-group-right img {
+    margin: 2.5rem 0 ;
+}
+.how-group-right p {
+    letter-spacing: 1px;
+}
+
+.order {
+    background-image: url('../img/order-1.png');
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding : 3rem ; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+.order h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: #000;
+}
+.footer-content{
+    padding: 3rem  0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    margin-right: 3.5rem;
+}
+
+footer ul li a{
+    color : #fff;
+}
+
+footer .instagram {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+footer .instagram img {
+    width: 32px;
+     height: 32px;
+     margin-right: 1.5rem;
+}
+footer .instagram-text{
+    color : #fff;
+}
+
+
+
+@media screen and (max-width:768px) {
+    nav .links {
+        display: none;
+    }
+    .intro-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-title{
+        font-size: 3rem;
+    }
+    .how-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
